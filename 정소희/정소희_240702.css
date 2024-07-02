@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'NanumSquareNeoLight';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoExtraBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoHeavy';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoVariable';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'HSBombaram';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: #222831;
+    text-decoration: none;
+  }
+a:hover{ color: #868686;}
+
+hr{
+    width : 50%;
+    background-color : pink;
+    margin-left : auto;
+    margin-right : auto;
+    border : 0px;
+    border-top : 5px
+}
+
+input, progress {
+    accent-color: rgb(255, 210, 210);
+  }
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'NanumSquareNeo';
+    font-size: 14px;
+    user-select: none;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+img{
+    object-fit: cover
+}
+
+.fadeoutImage {
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
+
+header{
+    height: 100px;
+    position: sticky;
+    top:-69px;
+    z-index: 100;
+}
+
+input{
+    border: 0;
+    height: 20px;
+    border-radius: 25px;
+    outline: none;
+    background-color: #dfdfdf;
+    padding-left: 8px;
+}
+
+header>div:first-child{
+    height: 55px;
+    margin-left: 20px;
+    margin-top: 10px;}
+header>div:last-of-type{
+    height: 45px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title>div:last-child{
+    margin: 20px;
+}
+
+.subject{
+    font-family: 'HSBombaram';
+    text-align: center;
+    font-size: 2em;
+    margin-top:-10px;
+    margin-bottom:10px;
+}
+
+.menu{
+    background-color: #FFF7F1;
+    font-family: 'NanumSquareNeoExtraBold';
+    color:#222831;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    align-items: center;
+}
+
+.menu>div{margin:10px;}
+
+.menu1:hover{color: #868686;}
+.menu2:hover{color: #868686;}
+.menu3:hover{color: #868686;}
+.menu4:hover{color: #868686;}
+.menu5:hover{color: #868686;}
+
+main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-1{
+    height: 530px;
+    overflow:hidden;
+    border-bottom-style : 1px solid rgb(197, 197, 197);
+    margin-bottom: 0;
+}
+
+.main-2{
+    height: 150px;
+    border-radius: 13px;
+    border : 1px solid rgb(197, 197, 197);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    margin-top: 5px;
+    margin-left : 20px;
+    margin-right : 20px;
+    margin-bottom: 10px;
+}
+
+.main-2.div{
+    width: 500px;
+}
+.main-2>div:last-child{color: #FFE4C9;}
+
+.main-3{
+    height: 150px;
+    border-radius: 13px;
+    border : 1px solid rgb(197, 197, 197);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-top: 10px;
+    margin-left : 20px;
+    margin-right : 20px;}
+
+.mian-3>div{
+    width: 500px;
+}
+.main-3>div:first-child{
+    color: #E78895;
+    text-align: center;}
+
+.main-4{
+    height: 450px;
+    border-radius: 13px;
+    border : 1px solid rgb(197, 197, 197);
+    flex-grow: 1;
+    align-items: center;
+    margin: 20px;}
+
+.main4g {object-fit:cover;}
+
+.main4g img{
+    width: 350px;
+    max-width: 100%;
+    height: 195px;
+
+    object-fit:cover; /* 마우스가 이미지를 벗어 났을 때도 자연스럽게 크기가 줄어들기 위함 */
+    transform:scale(0.9);
+    transition: transform .5s;
+}
+
+.main4g img:hover{ 
+    transform:scale(1.0);
+    transition: transform .5s;}
+
+
+#gallery{
+    text-align: center
+}
+
+.media{
+    height: 350px;
+    border-radius: 13px;
+    border : 1px solid rgb(197, 197, 197);
+    flex-grow: 1;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    object-fit:cover;
+}
+
+footer{
+    height: 90px;
+    background-color: #BED1CF;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.gotop{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    text-align: center;
+      
+    bottom: 30px;
+    right: 20px;
+  }

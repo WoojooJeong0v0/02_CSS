@@ -1,0 +1,77 @@
+/* css 파일은 <style> 태그 내부라고 생각 */
+/* id가 test1인 요소를 선택 */
+#test1{
+  color : hotpink; /*글자색*/
+  font-weight: bold; /* 글자 굵기 */
+  font-size : 20px; /* ;은 한 줄이 끝났다, 글자 크기 지정 : 20px */
+}
+
+
+/* id(#) 선택자 */
+#li1 {  background-color: #DA7297; }
+
+#li2 {  background-color: #FDFFD2; }
+
+#li3 {  background-color: #667BC6;}
+
+
+/* 태그 선택자 */
+strong{
+
+  font-size: 18px;
+  font-family: '고딕';
+  color : #667BC6;
+}
+
+code{
+
+  background-color: #e4e4e4;
+  display: block; /* 요소를 block 형식으로 변경 */
+  font-weight: bold;
+  width: 50%;
+
+}
+
+
+hr{
+
+  border-color: #DA7297;
+  border-style: solid;
+  height: 1px;
+  
+}
+
+
+/* class(.) 선택자 */
+.class-test1 {
+  background-color: black;
+  color: wheat;
+}
+.class-test2 {
+  background-color: #DA7297;
+  color : #e4e4e4;
+}
+
+
+/* 한 요소에 여러 클래스 작성하기 */
+.bg-green{ background-color: rgb(175, 255, 175); }
+.font-pink{ color : pink; }
+
+
+
+/* 웹 폰트 적용 */
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 모든 요소(*) 선택자 */
+*{
+
+  /* 모든 요소 글꼴 변경 */
+  font-family: 'GowunBatang-Regular';
+
+}

@@ -1,0 +1,136 @@
+/* 일반 구조 선택자 (위치 기준) */
+/* 위치 기준인 점 꼭 확인해야 함 */
+/* A선택자 > B선택자:first-child
+  - A 자식 중 B를 모두 선택하여 그 중 첫째만 선택해라? 
+  
+  - A의 자식 중 첫 번째 자식이 B가 맞으면 선택해라 라는 뜻!
+  
+  */
+
+
+#test1 > p:first-child{
+  background-color: red;
+  color: white;
+}
+
+/* A선택자 > B선택자:last-child
+  - A 자식 중 B를 모두 선택하여 그 중 막내만 선택해라? 
+  
+  - A의 자식 중 마지막 자식이 B가 맞으면 선택해라 라는 뜻!
+  
+  */
+
+#test1 > p:last-child{
+  background-color: blue;
+  color : wheat
+}
+
+
+/* A선택자 > B선택자:nth-child(숫자)
+  - A 자식 중 B를 모두 선택하여 그 중 n번째를 선택해라? 
+  
+  - A의 자식 중 n숫자 번째가 B가 맞으면 선택해라 라는 뜻!
+  
+  */
+
+#test1 > p:nth-child(3){
+  background-color: yellow;
+}
+
+
+/* A선택자 > B선택자:nth-child(수열)
+  - A 자식 중 B를 모두 선택하여 그 중 n번째를 선택해라? 
+  
+  - A의 자식 중 수열 번째가 B가 맞으면 선택해라 라는 뜻!
+  
+  */
+  /* 짝수번째 자식이 p가 맞으면 선택해라! 라는 뜻! */
+  #test1 > p:nth-child(2n){
+    background-color: pink;
+  }
+
+
+/* A선택자 > B선택자:nth-last-child(숫자)
+- A 자식 중 B를 모두 선택하여 그 중 n번째를 선택해라? 
+
+- A의 자식 중 뒤에서부터 n숫자 번째 자식이 B가 맞으면 선택해라 라는 뜻! */
+/* 뒤에서부터 4번째 자식이 맞으면 p 맞으면 선택해라! */
+#test1 > p:nth-last-child(4){
+  font-size: 24px;
+}
+
+
+/************************************************/
+
+
+/* 형태 구조 선택자 */
+/* A선택자 > B선택자:first-of-type
+  해석 순서는 1-2-3 문장 그대로 따라간다!
+
+  A의 자식 중 모든 B를 선택한 후 그중 첫 번째 자식만 선택한다.
+*/
+#test2 > p:first-of-type{
+  background-color: salmon;
+}
+
+#test2 > pre:first-of-type{
+  background-color: burlywood;
+}
+
+/* 
+  A선택자 > B선택자:last-of-type
+  A의 자식 중 모든 B를 선택한 후 그중 막내 자식만 선택한다.
+*/
+#test2 > p:last-of-type{
+  background-color: pink;
+}
+
+
+/* 
+  A선택자 > B선택자:nth-of-type
+  A의 자식 중 모든 B를 선택한 후 그중 n번째 자식만 선택한다.
+*/
+#test2 > p:nth-of-type(4){
+  font-size: 17px;
+}
+
+
+/* 
+  A선택자 > B선택자:nth-of-type(수열)
+  A의 자식 중 모든 B를 선택한 후 그중 n수열번째 자식만 선택한다.
+
+  n은 정수(0, 양의 정수)로 구성됨
+*/
+#test2 > p:nth-of-type(2n-1){
+  font-weight: bold;
+  font-family: '궁서';
+}
+
+
+/* 
+  A선택자 > B선택자:nth-last-of-type
+  A의 자식 중 모든 B를 선택한 후 뒤에서 n숫자 번째 자식만 선택한다.
+*/
+#test2 > p:nth-last-of-type(4){
+  cursor: pointer;
+  border : 3px solid black;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 1s; /* CSS가 변경되는 시간 통제 */
+}
+
+#test2 > p:nth-last-of-type(4):hover{
+  font-size: 9px;
+  background-color: pink;
+  rotate : 360deg; /* 360도 회전해라 */
+}
+
+
+/* 부정선택자 (:not()) */
+/* #test3 자식 중 li 태그를 모두 선택한 후 그중 3n번째를 제외하고 선택 */
+#test3 > li:not(:nth-of-type(3n)){
+  background-color: pink;
+}

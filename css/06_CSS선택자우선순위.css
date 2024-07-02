@@ -1,0 +1,59 @@
+/* 3순위 : 아이디 선택자 */
+#test1{
+  /* 낮은 우선순위를 덮어씌움 */
+  height: 100px;
+  color: red;
+  background-color: salmon;
+
+  /* 새로 추가된 속성 (누적) */
+  font-family: '궁서';
+  font-weight: bold;
+
+}
+
+
+/* 4순위 : 클래스 선택자 */
+.cls1{
+  /* 태그명보다 우선순위가 높음 */
+  background-color: green;
+
+  /* 글자색 흰색 */
+  /* 똑같은 속성값을 설정한 적이 없어서 그대로 적용(누적) */
+  color : white;
+}
+
+
+/* 5순위 : 태그선택자 */
+div{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+
+div{
+  /* 같은 선택자 여러 번 작성 가능 */
+  border: 1px solid black;
+}
+
+div{
+  /* 같은 우선순위면 마지막에 작성한 것으로 적용 */
+  background-color: gray;
+}
+
+
+/* !important로 같은 우선순위면 선택자 우선순위를 따짐 */
+/* 셋다 1순위지만 위치보다 다음 단계로 순위를 따져볼 수 있음 */
+#test1{background-color: pink !important;}
+
+
+div{
+  /* 원래 5순위지만 !important를 적용하여 1순위로 변경 */
+  /* 1순위 : !important; (세미콜론 앞에 넣기) */
+  background-color: #a9ffc3 !important;
+}
+
+
+/* 같은 우선순위를 가지고 있으면 마지막 작성한 것으로 적용 */
+div{
+  background-color: steelblue !important;
+}
